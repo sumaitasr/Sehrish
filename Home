@@ -1,0 +1,82 @@
+
+<!-- Author: Sumaita Rahman -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sehrish</title>
+  <meta charset="utf-8">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+
+<br />
+<div class="container">	
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" >		
+			<div class="sehrish">Sehrish</div>
+		</div>
+		<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">	
+			<div class="logo"> <img src="image/Logo.png" align="right" width="180" height="80"></div>
+		</div>			
+	</div>
+	
+	
+	<div class="row paraspace">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >		
+				<ul>
+				  <li><a href="index.php">Home</a></li>
+				  <li><a href="aboutus.php">About</a></li>
+				  <li><a href="people.php">People</a></li>
+				  <li><a href="https://docs.google.com/forms/d/13-lDm8fvfte9lTK9YSHTO-DzYnrgwo9egiAnlRJA8U4/edit?usp=forms_home&ths=true">Join Us</a></li>
+				  <li><a href="contactus.php">Contact Us</a></li>
+				  <li style="float:right"><a class="active1" href="Contribute.html">Contribute</a> </li>
+				</ul>
+		</div>		
+	</div>	
+
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >		
+			<div class="w3-content w3-section" style="max-width:1000px">
+			  <img class="mySlides" src="image/Sharmin.jpg" style="width:100%">
+			  <img class="mySlides" src="image/Sanjida.jpg" style="width:100%">
+			  <img class="mySlides" src="image/Net.jpg" style="width:100%">
+			</div>
+
+			<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}    
+			  x[myIndex-1].style.display = "block";  
+			  setTimeout(carousel, 8000);
+			}
+			</script>
+
+			<div class="index_para"> Sehrish is a persian word, which means "Sunrise". It's motivated from our motto, "Let's Rise Together!". We can't change the society in one day but we can contribute towards a positive change every day. Let's rise by making positive impacts and help others to rise with us and we believe you would find a fulfillment of your soul by doing so! We have the concept that the fulfillment of the soul makes a person feel good and brings them inner peace and a person with inner peace glows like a rising sun. So, make yourself rise, help others rise and "Let's rise together!" Checkout our website and you might find a way to make a postive impact in our children's life. </div>	
+
+		</div>
+	</div>
+	
+	
+</div>
+
+</body>
+</html>
