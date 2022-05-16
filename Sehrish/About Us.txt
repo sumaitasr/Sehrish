@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+.myDiv {
+
+  background-color:white ;
+  font-family: Trebuchet MS", Helvetica, sans-serif;    
+  }
+h1 {font-size: 50px; font-family:impact;color: #ff6100}
+h2 {font-size: 20px;text-align:center;font-family: "Trebuchet MS", Helvetica, sans-serif;}
+.mySlides {display:none;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #ffb200;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 18px;
+}
+
+li a:hover:not(.active) {
+  background-color: #ff6100;
+}
+
+.active1 {
+  background-color: #ff6100;}
+
+</style>
+
+
+<body>
+
+<h1>Sehrish <img src="logo.png" alt="logo" width="180" height="80" align = "right"></h1>
+
+<ul>
+  <li><a href="Homepage.html">Home</a></li>
+  <li><a href="About%20Us.html">About</a></li>
+  <li><a href="People.html">People</a></li>
+  <li><a href="#Join Us">Join Us</a></li>
+  <li><a href="#Contact Us">Contact Us</a></li>
+  <li style="float:right"><a class="active1" href="#Contribute">Contribute</a>
+  
+</ul>
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="Sharmin.jpg" style="width:100%">
+  <img class="mySlides" src="Sanjida.jpg" style="width:100%">
+  <img class="mySlides" src="Net.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 8000);
+}
+</script>
+
+<div class="myDiv">
+  <b>About Us:</b>
+  <p>
+Sehrish is a non-profit organization working towards the betterment of children and adults with autism. We are trying to find out the actual number of people with Asperges Syndrome and other people with limited mental abilities in the rural areas of Bangladesh. We are also trying to contribute towards the financial dependence of the parents or guardians of the children with autism. To create the financial dependence, we are trying to create employment and trying to provide them with tools to create their own dependency. 
+</p>
+<b>Our Progress Till Now:</b> 
+<p>Surveyed the area of Harinarayanpur and Tribeni, Kushtia.
+Tried to help people with financial dependency by providing them with necessarry components or tools to work, like seeds, nets etc.Connected interested mothers with trainers and also provided them with basic tools, so that they could start making hand crafted products or dresses depending on their skill.</p>
+<h2><b>Future Goals:</b></h2><br>
+<b>For Rural Areas:</b>
+<p>We aim to create a learning center near every area where autism is prevalent in the rural areas and help the children to learn and discover, that would help them to be independent in the future. Creating partnerships to train the local people to be therapists and teachers are one of our focuses. That would serve our purpose and would also contribute towards existing unemployment problem in society. </p>
+<b>For Urban Areas: </b>
+<p>We are focusing on the mental health of the parents of children with autism. One of the ways of working is creating an online platform to connect people with professional mental health advisors and other parents on spectrum.</p>
+</div>
+
+
+</body>
+</html>
+
+
+

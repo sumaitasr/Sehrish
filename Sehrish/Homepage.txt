@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+<title>Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+h1 {font-size: 50px; font-family:impact;color:#ff6100}
+.mySlides {display:none;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffb200;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: verdana;
+  font-size: 18px;
+}
+
+li a:hover:not(.active) {
+  background-color: #ff6100;
+}
+
+.active1 {
+  background-color: #ff6100;}
+
+</style>
+
+
+<body>
+
+<h1>Sehrish <img src="logo.png" alt="logo" width="180" height="80" align = "right"></h1>
+
+<ul>
+  <li><a href="Homepage.html">Home</a></li>
+  <li><a href="About%20Us.html">About</a></li>
+  <li><a href="People.html">People</a></li>
+  <li><a href="#Join Us">Join Us</a></li>
+  <li><a href="#Contact Us">Contact Us</a></li>
+  <li style="float:right"><a class="active1" href="#Contribute">Contribute</a>
+  
+</ul>
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="Sharmin.jpg" style="width:100%">
+  <img class="mySlides" src="Sanjida.jpg" style="width:100%">
+  <img class="mySlides" src="Net.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 8000);
+}
+</script>
+
+<p style = "font-family:Trebuchet MS", Helvetica, sans-serif"> Sehrish is a persian word, which means "Sunrise". It's motivated from our motto, "Let's Rise Together!". We can't change the society in one day but we can contribute towards a positive change every day. Let's rise by making positive impacts and help others to rise with us and we believe you would find a fulfillment of your soul by doing so! We have the concept that the fulfillment of the soul makes a person feel good and brings them inner peace and a person with inner peace glows like a rising sun. So, make yourself rise, help others rise and "Let's rise together!" Checkout our website and you might find a way to make a postive impact in our children's life. </p>
+
+
+</body>
+</html>
+
+
+
